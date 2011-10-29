@@ -1,0 +1,17 @@
+<?fxml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10"
+      style="-fx-padding: 10"
+      fx:controller="com.zenjava.samples.helloworld.HelloWorldController"
+      xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <Label text="Enter your name"/>
+        <TextField fx:id="nameField"/>
+        <Button text="Say Hello" onAction="#sayHello"/>
+        <Label fx:id="messageLabel" style="-fx-wrap-text: true"/>
+    </children>
+</VBox>

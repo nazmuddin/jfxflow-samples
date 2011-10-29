@@ -67,7 +67,8 @@ public class DemoUiFactory
     {
         if (loginController == null)
         {
-            loginController = FxmlControllerLoader.loadController(LoginController.class, "/fxml/login.fxml", "messages/login");
+            FxmlControllerLoader loader = new FxmlControllerLoader();
+            loginController = loader.loadController("/fxml/login.fxml", "messages/login");
             loginController.setNavigationManager(navigationManager());
             loginController.setRemoteDemoService(demoService());
         }
@@ -78,7 +79,8 @@ public class DemoUiFactory
     {
         if (homeController == null)
         {
-            homeController = FxmlControllerLoader.loadController(HomeController.class, "/fxml/home.fxml", "messages/home");
+            FxmlControllerLoader loader = new FxmlControllerLoader();
+            homeController = loader.loadController("/fxml/home.fxml", "messages/home");
             homeController.setNavigationManager(navigationManager());
         }
         return homeController;
@@ -88,7 +90,8 @@ public class DemoUiFactory
     {
         if (searchController == null)
         {
-            searchController = FxmlControllerLoader.loadController(SearchController.class, "/fxml/search.fxml", "messages/search");
+            FxmlControllerLoader loader = new FxmlControllerLoader();
+            searchController = loader.loadController("/fxml/search.fxml", "messages/search");
         }
         return searchController;
     }
