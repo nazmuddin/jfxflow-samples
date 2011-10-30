@@ -3,12 +3,6 @@ package com.zenjava.samples.simpleflow;
 import com.zenjava.jfxflow.controller.Browser;
 import com.zenjava.jfxflow.controller.FxmlControllerLoader;
 import com.zenjava.jfxflow.navigation.DefaultNavigationManager;
-import com.zenjava.samples.simpleflow.home.HomeController;
-import com.zenjava.samples.simpleflow.home.HomePlace;
-import com.zenjava.samples.simpleflow.page1.Page1Controller;
-import com.zenjava.samples.simpleflow.page1.Page1Place;
-import com.zenjava.samples.simpleflow.page2.Page2Controller;
-import com.zenjava.samples.simpleflow.page2.Page2Place;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
@@ -22,20 +16,6 @@ public class SimpleFlowApplication extends Application
     }
 
     public void start(Stage stage) throws Exception
-    {
-        Browser browser = new Browser("Browser Demo");
-
-        // This extra BorderPane is only needed due to a bug with CSS. Once the bug is fixed
-        // we will be able to add the browser directly to the root of the scene
-        BorderPane root = new BorderPane();
-        root.setCenter(browser);
-
-        Scene scene = new Scene(root, 800, 600);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    public void startx(Stage stage) throws Exception
     {
         FxmlControllerLoader loader = new FxmlControllerLoader();
 

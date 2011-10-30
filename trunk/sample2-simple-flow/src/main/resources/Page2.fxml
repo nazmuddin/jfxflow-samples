@@ -6,7 +6,7 @@
 
 <VBox id="page2"
       spacing="10"
-      fx:controller="com.zenjava.samples.simpleflow.page2.Page2Controller"
+      fx:controller="com.zenjava.samples.simpleflow.Page2Controller"
       xmlns:fx="http://javafx.com/fxml">
     <children>
         <Label text="This is Page 2"/>
