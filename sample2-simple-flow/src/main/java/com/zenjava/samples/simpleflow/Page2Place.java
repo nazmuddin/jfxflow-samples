@@ -1,4 +1,4 @@
-package com.zenjava.samples.simpleflow.page2;
+package com.zenjava.samples.simpleflow;
 
 import com.zenjava.jfxflow.navigation.Place;
 

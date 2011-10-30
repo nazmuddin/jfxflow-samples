@@ -1,11 +1,10 @@
-package com.zenjava.samples.simpleflow.page2;
+package com.zenjava.samples.simpleflow;
 
 import com.zenjava.jfxflow.controller.AbstractController;
 import com.zenjava.jfxflow.navigation.NavigationManager;
-import com.zenjava.samples.simpleflow.page1.Page1Place;
 import javafx.event.ActionEvent;
 
-public class Page2Controller extends AbstractController
+public class Page1Controller extends AbstractController
 {
     private NavigationManager navigationManager;
 
@@ -14,8 +13,8 @@ public class Page2Controller extends AbstractController
         this.navigationManager = navigationManager;
     }
 
-    public void goToPage1(ActionEvent event)
+    public void goToPage2(ActionEvent event)
     {
-        navigationManager.goTo(new Page1Place());
+        navigationManager.goTo(new Page2Place());
     }
 }

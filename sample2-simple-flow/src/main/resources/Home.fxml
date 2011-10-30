@@ -6,7 +6,7 @@
 
 <VBox id="home"
       spacing="10"
-      fx:controller="com.zenjava.samples.simpleflow.home.HomeController"
+      fx:controller="com.zenjava.samples.simpleflow.HomeController"
       xmlns:fx="http://javafx.com/fxml">
     <children>
         <Label text="Welcome to the Simple Flow example"/>

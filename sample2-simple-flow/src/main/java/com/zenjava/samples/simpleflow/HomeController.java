@@ -1,9 +1,7 @@
-package com.zenjava.samples.simpleflow.home;
+package com.zenjava.samples.simpleflow;
 
 import com.zenjava.jfxflow.controller.AbstractController;
 import com.zenjava.jfxflow.navigation.NavigationManager;
-import com.zenjava.samples.simpleflow.page1.Page1Place;
-import com.zenjava.samples.simpleflow.page2.Page2Place;
 import javafx.event.ActionEvent;
 
 public class HomeController extends AbstractController
