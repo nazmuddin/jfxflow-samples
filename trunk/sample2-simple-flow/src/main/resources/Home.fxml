@@ -1,0 +1,16 @@
+<?fxml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="home"
+      spacing="10"
+      fx:controller="com.zenjava.samples.simpleflow.home.HomeController"
+      xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <Label text="Welcome to the Simple Flow example"/>
+        <Button text="Go to Page 1" onAction="#goToPage1"/>
+        <Button text="Go to Page 2" onAction="#goToPage2"/>
+    </children>
+</VBox>
