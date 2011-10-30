@@ -30,7 +30,7 @@ public class SimpleFlowApplication extends Application
         Page2Controller page2Controller = loader.loadController("/Page2.fxml");
         page2Controller.setNavigationManager(navigationManager);
 
-        Browser browser = new Browser("Simple Flow", navigationManager, new HomePlace());
+        Browser browser = new Browser("Browser Demo", navigationManager, new HomePlace());
         browser.registerController(HomePlace.class, homeController);
         browser.registerController(Page1Place.class, page1Controller);
         browser.registerController(Page2Place.class, page2Controller);
