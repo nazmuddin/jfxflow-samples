@@ -4,8 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox id="page1"
-      spacing="10"
+<VBox spacing="10"
       fx:controller="com.zenjava.samples.simpleflow.Page1Controller"
       xmlns:fx="http://javafx.com/fxml">
     <children>
