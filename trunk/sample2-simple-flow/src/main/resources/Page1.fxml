@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 
 <VBox spacing="10"
-      fx:controller="com.zenjava.samples.simpleflow.Page1Controller"
+      fx:controller="com.zenjava.samples.simpleflow.Page1Activity"
       xmlns:fx="http://javafx.com/fxml">
     <children>
         <Label text="This is Page 1"/>

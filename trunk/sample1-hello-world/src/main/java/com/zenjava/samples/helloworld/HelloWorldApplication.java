@@ -1,8 +1,7 @@
 package com.zenjava.samples.helloworld;
 
-import com.zenjava.jfxflow.controller.FxmlControllerLoader;
+import com.zenjava.jfxflow.actvity.FxmlLoader;
 import javafx.application.Application;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -15,9 +14,9 @@ public class HelloWorldApplication extends Application
 
     public void start(Stage stage) throws Exception
     {
-        FxmlControllerLoader loader = new FxmlControllerLoader();
-        HelloWorldController controller = loader.loadController("/HelloWorld.fxml");
-        Scene scene = new Scene((Parent) controller.getView(), 200, 200);
+        FxmlLoader loader = new FxmlLoader();
+        HelloWorldActivity activity = loader.load("/HelloWorld.fxml");
+        Scene scene = new Scene(activity.getNode(), 200, 200);
         stage.setScene(scene);
         stage.show();
     }

@@ -6,7 +6,7 @@
 
 <VBox spacing="10"
       style="-fx-padding: 10"
-      fx:controller="com.zenjava.samples.helloworld.HelloWorldController"
+      fx:controller="com.zenjava.samples.helloworld.HelloWorldActivity"
       xmlns:fx="http://javafx.com/fxml">
     <children>
         <Label text="Enter your name"/>
