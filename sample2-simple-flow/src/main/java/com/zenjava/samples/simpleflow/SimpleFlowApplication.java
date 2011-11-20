@@ -1,8 +1,10 @@
 package com.zenjava.samples.simpleflow;
 
-import com.zenjava.jfxflow.controller.Browser;
-import com.zenjava.jfxflow.controller.FxmlControllerLoader;
+import com.zenjava.jfxflow.actvity.FxmlLoader;
+import com.zenjava.jfxflow.control.Browser;
 import com.zenjava.jfxflow.navigation.DefaultNavigationManager;
+import com.zenjava.jfxflow.navigation.Place;
+import com.zenjava.jfxflow.navigation.RegexPlaceResolver;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
@@ -17,25 +19,24 @@ public class SimpleFlowApplication extends Application
 
     public void start(Stage stage) throws Exception
     {
-        FxmlControllerLoader loader = new FxmlControllerLoader();
+        FxmlLoader loader = new FxmlLoader();
 
         DefaultNavigationManager navigationManager = new DefaultNavigationManager();
 
-        HomeController homeController = loader.loadController("/Home.fxml");
-        homeController.setNavigationManager(navigationManager);
+        HomeActivity homeActivity = loader.load("/Home.fxml");
+        homeActivity.setNavigationManager(navigationManager);
 
-        Page1Controller page1Controller = loader.loadController("/Page1.fxml");
-        page1Controller.setNavigationManager(navigationManager);
+        Page1Activity page1Activity = loader.load("/Page1.fxml");
+        page1Activity.setNavigationManager(navigationManager);
 
-        Page2Controller page2Controller = loader.loadController("/Page2.fxml");
-        page2Controller.setNavigationManager(navigationManager);
+        Page2Activity page2Activity = loader.load("/Page2.fxml");
+        page2Activity.setNavigationManager(navigationManager);
 
-        Browser browser = new Browser("Browser Demo", navigationManager, new HomePlace());
-        browser.registerController(HomePlace.class, homeController);
-        browser.registerController(Page1Place.class, page1Controller);
-        browser.registerController(Page2Place.class, page2Controller);
-
-        navigationManager.goTo(new HomePlace());
+        Browser browser = new Browser(navigationManager);
+        browser.getPlaceResolvers().add(new RegexPlaceResolver("home", homeActivity));
+        browser.getPlaceResolvers().add(new RegexPlaceResolver("page1", page1Activity));
+        browser.getPlaceResolvers().add(new RegexPlaceResolver("page2", page2Activity));
+        navigationManager.goTo(new Place("home"));
 
         BorderPane root = new BorderPane();
         root.setCenter(browser);
