@@ -20,7 +20,7 @@
                     <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
                 </Label>
 
-                <Hyperlink text="%home.navigation" onAction="#goToPage1"/>
+                <Hyperlink text="%home.navigation" onAction="#goToNavigation"/>
                 <Label text="%home.navigation.description">
                     <styleClass><String fx:value="label"/><String fx:value="description"/></styleClass>
                 </Label>
