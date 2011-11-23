@@ -20,6 +20,7 @@ public class JfxFlowShowcaseApplicationFactory
     {
         Browser browser = new Browser(navigationManager(), "JFX Flow Showcase");
         browser.getPlaceResolvers().add(new RegexPlaceResolver("home", homeActivity()));
+        browser.getPlaceResolvers().add(new RegexPlaceResolver("navigation", navigationActivity()));
         return browser;
     }
 
@@ -33,6 +34,12 @@ public class JfxFlowShowcaseApplicationFactory
     public HomeActivity homeActivity()
     {
         return loader.load("/fxml/Home.fxml", resources());
+    }
+
+    @Bean
+    public NavigationActivity navigationActivity()
+    {
+        return loader.load("/fxml/Navigation.fxml", resources());
     }
 
     @Bean

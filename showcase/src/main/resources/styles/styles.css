@@ -1,8 +1,8 @@
-.browser .browser-content {
+.browser-content {
     -fx-padding: 0;
 }
 
-.scroll-pane {
+.browser-content .scroll-pane {
     -fx-fit-to-width: true;
     -fx-pannable: true;
     -fx-background-color: white;
@@ -11,19 +11,21 @@
     -fx-padding: 0;
 }
 
-.home {
-    -fx-padding: 20;
-}
-
-.home .title {
+.browser-content .title {
     -fx-font-size: 16;
     -fx-font-weight: bold;
     -fx-padding: 0 0 10 0;
 }
 
-.home .message {
+.browser-content .message {
     -fx-padding: 0 0 20 0;
     -fx-wrap-text: true;
+}
+
+
+.home,
+.navigation {
+    -fx-padding: 20;
 }
 
 .home .hyperlink {

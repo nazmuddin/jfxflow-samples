@@ -17,13 +17,13 @@ public class HomeActivity extends AbstractActivity
         this.navigationManager = navigationManager;
     }
 
+    public void goToNavigation(ActionEvent event)
+    {
+        navigationManager.goTo(new Place("navigation"));
+    }
+
     public void goToPage1(ActionEvent event)
     {
         navigationManager.goTo(new Place("page1"));
-    }
-
-    public void goToPage2(ActionEvent event)
-    {
-        navigationManager.goTo(new Place("page2"));
     }
 }
