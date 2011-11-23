@@ -13,9 +13,9 @@
     <name>JFX Flow Samples</name>
 
     <modules>
-        <module>jfxflow-sample1</module>
         <module>sample1-hello-world</module>
         <module>sample2-simple-flow</module>
+        <module>showcase</module>
     </modules>
 
     <properties>

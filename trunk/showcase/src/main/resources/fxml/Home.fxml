@@ -1,0 +1,51 @@
+<?fxml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fitToWidth="true"
+            fx:controller="com.zenjava.samples.simpleflow.HomeActivity"
+            xmlns:fx="http://javafx.com/fxml">
+    <content>
+        <VBox>
+            <styleClass><String fx:value="home"/></styleClass>
+
+            <children>
+                <Label text="%home.title">
+                    <styleClass><String fx:value="label"/><String fx:value="title"/></styleClass>
+                </Label>
+                <Label text="%home.message">
+                    <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
+                </Label>
+
+                <Hyperlink text="%home.navigation" onAction="#goToPage1"/>
+                <Label text="%home.navigation.description">
+                    <styleClass><String fx:value="label"/><String fx:value="description"/></styleClass>
+                </Label>
+
+                <Hyperlink text="%home.transitions" onAction="#goToPage1"/>
+                <Label text="%home.transitions.description">
+                    <styleClass><String fx:value="label"/><String fx:value="description"/></styleClass>
+                </Label>
+
+                <Hyperlink text="%home.threading" onAction="#goToPage1"/>
+                <Label text="%home.threading.description">
+                    <styleClass><String fx:value="label"/><String fx:value="description"/></styleClass>
+                </Label>
+
+                <Hyperlink text="%home.dialogs" onAction="#goToPage1"/>
+                <Label text="%home.dialogs.description">
+                    <styleClass><String fx:value="label"/><String fx:value="description"/></styleClass>
+                </Label>
+
+                <Hyperlink text="%home.forms" onAction="#goToPage1"/>
+                <Label text="%home.forms.description">
+                    <styleClass><String fx:value="label"/><String fx:value="description"/></styleClass>
+                </Label>
+
+            </children>
+        </VBox>
+    </content>
+</ScrollPane>

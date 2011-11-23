@@ -1,0 +1,38 @@
+.browser .browser-content {
+    -fx-padding: 0;
+}
+
+.scroll-pane {
+    -fx-fit-to-width: true;
+    -fx-pannable: true;
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.home {
+    -fx-padding: 20;
+}
+
+.home .title {
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10 0;
+}
+
+.home .message {
+    -fx-padding: 0 0 20 0;
+    -fx-wrap-text: true;
+}
+
+.home .hyperlink {
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-accent;
+}
+
+.home .description{
+    -fx-padding: 20 40 20 40;
+    -fx-wrap-text: true;
+}

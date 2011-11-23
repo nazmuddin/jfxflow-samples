@@ -1,0 +1,14 @@
+<?fxml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10"
+      fx:controller="com.zenjava.samples.simpleflow.Page2Activity"
+      xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <Label text="This is Page 2"/>
+        <Button text="Go to Page 1" onAction="#goToPage1"/>
+    </children>
+</VBox>
