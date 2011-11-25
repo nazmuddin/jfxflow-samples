@@ -5,6 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 
 <ScrollPane fitToWidth="true"
@@ -12,7 +13,7 @@
             xmlns:fx="http://javafx.com/fxml">
     <content>
         <VBox>
-            <styleClass><String fx:value="navigation"/></styleClass>
+            <styleClass><String fx:value="page"/><String fx:value="navigation"/></styleClass>
 
             <children>
                 <Label text="%navigation.title">
@@ -22,42 +23,61 @@
                     <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
                 </Label>
 
+
                 <Group>
+                    <styleClass><String fx:value="diagram"/></styleClass>
                     <children>
 
                         <!-- Browser -->
-                        <ImageView >
-                           <image><Image url="@../images/browser.png"/></image>
+                        <ImageView x="100" y="30">
+                            <image><Image url="@../images/browser.png"/></image>
                         </ImageView>
 
                         <!-- Activity -->
-                        <ImageView x="300" y="30">
-                           <image><Image url="@../images/activity.png"/></image>
+                        <ImageView x="400" y="50">
+                            <image><Image url="@../images/activity.png"/></image>
+                            <!--<tooltip><Tooltip text="%navigation.activity.info"/></tooltip>-->
                         </ImageView>
 
                         <!-- Navigation Manager -->
-                        <ImageView x="150" y="270">
-                           <image><Image url="@../images/navigation-manager.png"/></image>
+                        <ImageView x="250" y="340">
+                            <image><Image url="@../images/navigation-manager.png"/></image>
+                            <!--<tooltip><Tooltip text="%navigation.navigationManager.info"/></tooltip>-->
                         </ImageView>
 
+
                         <!-- Activity-Browser arrow -->
-                        <ImageView x="200" y="60" rotate="-45">
+                        <ImageView x="300" y="70" rotate="-45">
                            <image><Image url="@../images/left-arrow.gif"/></image>
                         </ImageView>
 
                         <!-- Activity-Navigation arrow -->
-                        <ImageView x="300" y="210" rotate="155">
+                        <ImageView x="400" y="250" rotate="155">
                            <image><Image url="@../images/right-arrow.gif"/></image>
                         </ImageView>
 
                         <!-- Navigation-Browser arrow -->
-                        <ImageView x="100" y="210" rotate="-70">
+                        <ImageView x="200" y="250" rotate="-70">
                            <image><Image url="@../images/right-arrow.gif"/></image>
                         </ImageView>
 
+
+                        <!-- Call outs -->
+                        <Label text="%navigation.browser.callout" layoutX="0" layoutY="50">
+                            <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
+                            <tooltip><Tooltip text="%navigation.browser.info"/></tooltip>
+                        </Label>
+
+                        <Label text="%navigation.activity.callout" layoutX="610" layoutY="50">
+                            <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
+                        </Label>
+
+                        <Label text="%navigation.navigationManager.callout" layoutX="50" layoutY="400">
+                            <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
+                        </Label>
+
                     </children>
                 </Group>
-
             </children>
         </VBox>
     </content>

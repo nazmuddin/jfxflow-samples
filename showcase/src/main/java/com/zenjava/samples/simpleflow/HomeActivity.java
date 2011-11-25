@@ -4,26 +4,34 @@ import com.zenjava.jfxflow.actvity.AbstractActivity;
 import com.zenjava.jfxflow.navigation.NavigationManager;
 import com.zenjava.jfxflow.navigation.Place;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class HomeActivity extends AbstractActivity
 {
     @Autowired private NavigationManager navigationManager;
-    @FXML
-
-    public void setNavigationManager(NavigationManager navigationManager)
-    {
-        this.navigationManager = navigationManager;
-    }
 
     public void goToNavigation(ActionEvent event)
     {
         navigationManager.goTo(new Place("navigation"));
     }
 
-    public void goToPage1(ActionEvent event)
+    public void goToTransitions(ActionEvent event)
     {
-        navigationManager.goTo(new Place("page1"));
+        navigationManager.goTo(new Place("transitions"));
+    }
+
+    public void goToThreading(ActionEvent event)
+    {
+        navigationManager.goTo(new Place("threading"));
+    }
+
+    public void goToDialogs(ActionEvent event)
+    {
+        navigationManager.goTo(new Place("dialogs"));
+    }
+
+    public void goToForms(ActionEvent event)
+    {
+        navigationManager.goTo(new Place("forms"));
     }
 }
