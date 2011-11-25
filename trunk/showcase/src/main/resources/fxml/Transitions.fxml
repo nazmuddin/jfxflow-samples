@@ -23,6 +23,21 @@
                     <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
                 </Label>
 
+                <Hyperlink text="%transitions.fade" onAction="#showFadeTransition"/>
+                <Label text="%transitions.fade.description">
+                    <styleClass><String fx:value="label"/><String fx:value="description"/></styleClass>
+                </Label>
+
+                <Hyperlink text="%transitions.fly" onAction="#showFlyTransition"/>
+                <Label text="%transitions.fly.description">
+                    <styleClass><String fx:value="label"/><String fx:value="description"/></styleClass>
+                </Label>
+
+                <Hyperlink text="%transitions.custom" onAction="#showCustomTransition"/>
+                <Label text="%transitions.custom.description">
+                    <styleClass><String fx:value="label"/><String fx:value="description"/></styleClass>
+                </Label>
+
             </children>
         </VBox>
     </content>
