@@ -24,6 +24,7 @@ public class JfxFlowShowcaseApplicationFactory
         browser.getPlaceResolvers().add(new RegexPlaceResolver("transitions", transitionsActivity()));
         browser.getPlaceResolvers().add(new RegexPlaceResolver("transitions/fade", fadeTransitionActivity()));
         browser.getPlaceResolvers().add(new RegexPlaceResolver("transitions/fly", flyTransitionActivity()));
+        browser.getPlaceResolvers().add(new RegexPlaceResolver("transitions/custom", customTransitionActivity()));
         browser.getPlaceResolvers().add(new RegexPlaceResolver("threading", threadingActivity()));
         browser.getPlaceResolvers().add(new RegexPlaceResolver("dialogs", dialogsActivity()));
         browser.getPlaceResolvers().add(new RegexPlaceResolver("forms", formsActivity()));
@@ -68,6 +69,12 @@ public class JfxFlowShowcaseApplicationFactory
         TransitionExampleActivity activity = loader.load("/fxml/TransitionExample.fxml", resources());
         activity.setType(TransitionExampleActivity.Type.fly);
         return activity;
+    }
+
+    @Bean
+    public CustomTransitionExampleActivity customTransitionActivity()
+    {
+        return loader.load("/fxml/CustomTransitionExample.fxml", resources());
     }
 
     @Bean
