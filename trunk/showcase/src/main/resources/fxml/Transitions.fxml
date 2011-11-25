@@ -1,0 +1,29 @@
+<?fxml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<ScrollPane fitToWidth="true"
+            fx:controller="com.zenjava.samples.simpleflow.TransitionsActivity"
+            xmlns:fx="http://javafx.com/fxml">
+    <content>
+        <VBox>
+            <styleClass><String fx:value="page"/><String fx:value="transitions"/></styleClass>
+
+            <children>
+                <Label text="%transitions.title">
+                    <styleClass><String fx:value="label"/><String fx:value="title"/></styleClass>
+                </Label>
+                <Label text="%transitions.message">
+                    <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
+                </Label>
+
+            </children>
+        </VBox>
+    </content>
+</ScrollPane>

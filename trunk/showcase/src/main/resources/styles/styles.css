@@ -23,8 +23,7 @@
 }
 
 
-.home,
-.navigation {
+.page {
     -fx-padding: 20;
 }
 
@@ -34,7 +33,23 @@
     -fx-text-fill: -fx-accent;
 }
 
-.home .description{
+.home .description {
     -fx-padding: 20 40 20 40;
     -fx-wrap-text: true;
+}
+
+.diagram {
+    -fx-padding: 100;
+}
+
+.diagram .callout {
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+    -fx-background-color: #ffa;
+    -fx-background-radius: 6;
+    -fx-border-color: #aaa;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-effect: dropshadow(two-pass-box , rgba(100, 100, 100, 0.4), 1, 0.0 , 0, 1);
 }
