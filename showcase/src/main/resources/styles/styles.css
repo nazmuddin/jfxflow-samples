@@ -22,15 +22,15 @@
     -fx-wrap-text: true;
 }
 
-
-.page {
-    -fx-padding: 20;
-}
-
-.home .hyperlink {
+.browser-content .hyperlink {
     -fx-font-size: 12;
     -fx-font-weight: bold;
     -fx-text-fill: -fx-accent;
+}
+
+
+.page {
+    -fx-padding: 20;
 }
 
 .home .description {
@@ -52,4 +52,9 @@
     -fx-border-width: 1;
     -fx-border-radius: 6;
     -fx-effect: dropshadow(two-pass-box , rgba(100, 100, 100, 0.4), 1, 0.0 , 0, 1);
+}
+
+.transitions .description {
+    -fx-padding: 20 40 20 40;
+    -fx-wrap-text: true;
 }
