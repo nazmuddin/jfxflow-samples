@@ -1,0 +1,37 @@
+<?fxml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<ScrollPane fitToWidth="true"
+            fx:controller="com.zenjava.samples.simpleflow.CustomTransitionExampleActivity"
+            xmlns:fx="http://javafx.com/fxml">
+    <content>
+        <VBox fx:id="animationPane">
+            <styleClass><String fx:value="page"/><String fx:value="custom-transition-example"/></styleClass>
+
+            <children>
+
+                <Label fx:id="label1" text="In the vacant places"/>
+                <Label fx:id="label2" text="We will build with new bricks"/>
+
+                <Label fx:id="label3" text="Where the bricks are fallen"/>
+                <Label fx:id="label4" text="We will build with new stone"/>
+
+                <Label fx:id="label5" text="Where the beams are rotten"/>
+                <Label fx:id="label6" text="We will build with new timbers"/>
+
+                <Label fx:id="label7" text="Where the word is unspoken"/>
+                <Label fx:id="label8" text="We will build with new speech"/>
+
+                <Label fx:id="label9" text="There is work together"/>
+
+            </children>
+        </VBox>
+    </content>
+</ScrollPane>
