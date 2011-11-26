@@ -82,7 +82,7 @@ public class ThreadingActivity extends AbstractActivity
         {
             protected Void call() throws Exception
             {
-                throw new RuntimeException("An example exception. Note that this error page is stylable via CSS");
+                throw new RuntimeException("An example exception. This error page is stylable via CSS, or you can build your own custom error page");
             }
         });
     }

@@ -34,6 +34,14 @@
     -fx-text-fill: -fx-accent;
 }
 
+.browser-content .unordered-list {
+    -fx-padding: 10 20 10 20;
+}
+
+.browser-content .unordered-list .label {
+    -fx-graphic: url("../images/bullet_blue.png");
+}
+
 
 .page,
 .error-page {
@@ -70,4 +78,13 @@
     -fx-background-color: #ffc;
     -fx-background-radius: 6;
     -fx-padding: 10;
+}
+
+.dialogs .warning {
+    -fx-background-color: #fee;
+    -fx-background-radius: 6;
+    -fx-border-color: #c99;
+    -fx-border-radius: 6;
+    -fx-padding: 10;
+    -fx-wrap-text: true;
 }

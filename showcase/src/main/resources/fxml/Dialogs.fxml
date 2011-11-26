@@ -19,9 +19,19 @@
                 <Label text="%dialogs.title">
                     <styleClass><String fx:value="label"/><String fx:value="title"/></styleClass>
                 </Label>
+                <Label text="%dialogs.underConstruction">
+                    <styleClass><String fx:value="label"/><String fx:value="warning"/></styleClass>
+                </Label>
                 <Label text="%dialogs.message">
                     <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
                 </Label>
+
+                <HBox spacing="10">
+                    <styleClass><String fx:value="action-area"/></styleClass>
+                    <children>
+                        <Button text="%dialogs.simple.show" onAction="#showSimpleDialog" />
+                    </children>
+                </HBox>
 
             </children>
         </VBox>
