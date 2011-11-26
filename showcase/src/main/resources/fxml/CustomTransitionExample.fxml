@@ -8,11 +8,11 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 
-<ScrollPane fitToWidth="true"
-            fx:controller="com.zenjava.samples.simpleflow.CustomTransitionExampleActivity"
-            xmlns:fx="http://javafx.com/fxml">
-    <content>
-        <VBox fx:id="animationPane" spacing="10">
+<HBox alignment="CENTER"
+      fx:controller="com.zenjava.samples.simpleflow.CustomTransitionExampleActivity"
+      xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <VBox fx:id="animationPane" spacing="10" alignment="CENTER">
             <styleClass><String fx:value="page"/><String fx:value="custom-transition-example"/></styleClass>
 
             <children>
@@ -29,9 +29,9 @@
                 <Label fx:id="label7" text="Where the word is unspoken"/>
                 <Label fx:id="label8" text="We will build with new speech"/>
 
-                <Label fx:id="label9" text="There is work together"/>
+                <Label fx:id="label9" text="There is work together" translateY="-200"/>
 
             </children>
         </VBox>
-    </content>
-</ScrollPane>
+    </children>
+</HBox>
