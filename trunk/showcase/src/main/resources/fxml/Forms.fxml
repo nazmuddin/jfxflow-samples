@@ -23,6 +23,19 @@
                     <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
                 </Label>
 
+                <Label text="%forms.features.title">
+                    <styleClass><String fx:value="label"/><String fx:value="bullet-point"/></styleClass>
+                </Label>
+                <VBox>
+                    <styleClass><String fx:value="unordered-list"/></styleClass>
+                    <children>
+                        <Label text="%forms.features.binding"/>
+                        <Label text="%forms.features.validation"/>
+                        <Label text="%forms.features.highlights"/>
+                        <Label text="%forms.features.blocking"/>
+                        <Label text="%forms.features.wizards"/>
+                    </children>
+                </VBox>
             </children>
         </VBox>
     </content>
