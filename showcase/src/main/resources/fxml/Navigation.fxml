@@ -12,7 +12,7 @@
             fx:controller="com.zenjava.samples.simpleflow.NavigationActivity"
             xmlns:fx="http://javafx.com/fxml">
     <content>
-        <VBox>
+        <VBox spacing="10">
             <styleClass><String fx:value="page"/><String fx:value="navigation"/></styleClass>
 
             <children>
@@ -23,61 +23,64 @@
                     <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
                 </Label>
 
-
-                <Group>
+                <BorderPane>
                     <styleClass><String fx:value="diagram"/></styleClass>
-                    <children>
+                    <center>
+                        <Group>
+                            <children>
 
-                        <!-- Browser -->
-                        <ImageView x="100" y="30">
-                            <image><Image url="@../images/browser.png"/></image>
-                        </ImageView>
+                                <!-- Browser -->
+                                <ImageView x="100" y="30">
+                                    <image><Image url="@../images/browser.png"/></image>
+                                </ImageView>
 
-                        <!-- Activity -->
-                        <ImageView x="400" y="50">
-                            <image><Image url="@../images/activity.png"/></image>
-                            <!--<tooltip><Tooltip text="%navigation.activity.info"/></tooltip>-->
-                        </ImageView>
+                                <!-- Activity -->
+                                <ImageView x="400" y="50">
+                                    <image><Image url="@../images/activity.png"/></image>
+                                    <!--<tooltip><Tooltip text="%navigation.activity.info"/></tooltip>-->
+                                </ImageView>
 
-                        <!-- Navigation Manager -->
-                        <ImageView x="250" y="340">
-                            <image><Image url="@../images/navigation-manager.png"/></image>
-                            <!--<tooltip><Tooltip text="%navigation.navigationManager.info"/></tooltip>-->
-                        </ImageView>
-
-
-                        <!-- Activity-Browser arrow -->
-                        <ImageView x="300" y="70" rotate="-45">
-                           <image><Image url="@../images/left-arrow.gif"/></image>
-                        </ImageView>
-
-                        <!-- Activity-Navigation arrow -->
-                        <ImageView x="400" y="250" rotate="155">
-                           <image><Image url="@../images/right-arrow.gif"/></image>
-                        </ImageView>
-
-                        <!-- Navigation-Browser arrow -->
-                        <ImageView x="200" y="250" rotate="-70">
-                           <image><Image url="@../images/right-arrow.gif"/></image>
-                        </ImageView>
+                                <!-- Navigation Manager -->
+                                <ImageView x="250" y="340">
+                                    <image><Image url="@../images/navigation-manager.png"/></image>
+                                    <!--<tooltip><Tooltip text="%navigation.navigationManager.info"/></tooltip>-->
+                                </ImageView>
 
 
-                        <!-- Call outs -->
-                        <Label text="%navigation.browser.callout" layoutX="0" layoutY="50">
-                            <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
-                            <tooltip><Tooltip text="%navigation.browser.info"/></tooltip>
-                        </Label>
+                                <!-- Activity-Browser arrow -->
+                                <ImageView x="300" y="70" rotate="-45">
+                                   <image><Image url="@../images/left-arrow.gif"/></image>
+                                </ImageView>
 
-                        <Label text="%navigation.activity.callout" layoutX="610" layoutY="50">
-                            <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
-                        </Label>
+                                <!-- Activity-Navigation arrow -->
+                                <ImageView x="400" y="250" rotate="155">
+                                   <image><Image url="@../images/right-arrow.gif"/></image>
+                                </ImageView>
 
-                        <Label text="%navigation.navigationManager.callout" layoutX="50" layoutY="400">
-                            <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
-                        </Label>
+                                <!-- Navigation-Browser arrow -->
+                                <ImageView x="200" y="250" rotate="-70">
+                                   <image><Image url="@../images/right-arrow.gif"/></image>
+                                </ImageView>
 
-                    </children>
-                </Group>
+
+                                <!-- Call outs -->
+                                <Label text="%navigation.browser.callout" layoutX="0" layoutY="50">
+                                    <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
+                                    <tooltip><Tooltip text="%navigation.browser.info"/></tooltip>
+                                </Label>
+
+                                <Label text="%navigation.activity.callout" layoutX="610" layoutY="50">
+                                    <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
+                                </Label>
+
+                                <Label text="%navigation.navigationManager.callout" layoutX="50" layoutY="400">
+                                    <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
+                                </Label>
+
+                            </children>
+                        </Group>
+                    </center>
+                </BorderPane>
             </children>
         </VBox>
     </content>

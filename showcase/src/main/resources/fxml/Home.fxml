@@ -9,7 +9,7 @@
             fx:controller="com.zenjava.samples.simpleflow.HomeActivity"
             xmlns:fx="http://javafx.com/fxml">
     <content>
-        <VBox>
+        <VBox spacing="10">
             <styleClass><String fx:value="page"/><String fx:value="home"/></styleClass>
 
             <children>
