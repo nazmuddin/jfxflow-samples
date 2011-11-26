@@ -37,13 +37,11 @@
                                 <!-- Activity -->
                                 <ImageView x="400" y="50">
                                     <image><Image url="@../images/activity.png"/></image>
-                                    <!--<tooltip><Tooltip text="%navigation.activity.info"/></tooltip>-->
                                 </ImageView>
 
                                 <!-- Navigation Manager -->
-                                <ImageView x="250" y="340">
+                                <ImageView x="250" y="380">
                                     <image><Image url="@../images/navigation-manager.png"/></image>
-                                    <!--<tooltip><Tooltip text="%navigation.navigationManager.info"/></tooltip>-->
                                 </ImageView>
 
 
@@ -63,19 +61,16 @@
                                 </ImageView>
 
 
-                                <!-- Call outs -->
-                                <Label text="%navigation.browser.callout" layoutX="0" layoutY="50">
-                                    <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
-                                    <tooltip><Tooltip text="%navigation.browser.info"/></tooltip>
-                                </Label>
+                                <!-- Links -->
 
-                                <Label text="%navigation.activity.callout" layoutX="610" layoutY="50">
-                                    <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
-                                </Label>
+                                <Hyperlink text="%navigation.browser.callout" layoutX="180" layoutY="0"
+                                           onAction="#showBrowserInfo"/>
 
-                                <Label text="%navigation.navigationManager.callout" layoutX="50" layoutY="400">
-                                    <styleClass><String fx:value="label"/><String fx:value="callout"/></styleClass>
-                                </Label>
+                                <Hyperlink text="%navigation.activity.callout" layoutX="460" layoutY="10"
+                                           onAction="#showActivityInfo"/>
+
+                                <Hyperlink text="%navigation.navigationManager.callout" layoutX="280" layoutY="350"
+                                           onAction="#showNavigationManagerInfo"/>
 
                             </children>
                         </Group>

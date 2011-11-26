@@ -25,10 +25,11 @@
     -fx-wrap-text: true;
 }
 
-.browser-content .hyperlink {
+.browser-content .hyperlink,
+.browser-content .hyperlink:visited {
     -fx-font-size: 12;
     -fx-font-weight: bold;
-    -fx-text-fill: -fx-accent;
+    -fx-text-fill: #1e598e;
 }
 
 .browser-content .unordered-list {
@@ -51,18 +52,6 @@
 
 .diagram {
     -fx-padding: 30;
-}
-
-.diagram .callout {
-    -fx-font-size: 16;
-    -fx-font-weight: bold;
-    -fx-padding: 10;
-    -fx-background-color: #ffa;
-    -fx-background-radius: 6;
-    -fx-border-color: #aaa;
-    -fx-border-width: 1;
-    -fx-border-radius: 6;
-    -fx-effect: dropshadow(two-pass-box , rgba(100, 100, 100, 0.4), 1, 0.0 , 0, 1);
 }
 
 .threading .action-area {
