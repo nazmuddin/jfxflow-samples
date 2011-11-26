@@ -12,7 +12,7 @@
             fx:controller="com.zenjava.samples.simpleflow.CustomTransitionExampleActivity"
             xmlns:fx="http://javafx.com/fxml">
     <content>
-        <VBox fx:id="animationPane">
+        <VBox fx:id="animationPane" spacing="10">
             <styleClass><String fx:value="page"/><String fx:value="custom-transition-example"/></styleClass>
 
             <children>
