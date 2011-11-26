@@ -8,10 +8,10 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 
-<ScrollPane fitToWidth="true"
-            fx:controller="com.zenjava.samples.simpleflow.TransitionExampleActivity"
-            xmlns:fx="http://javafx.com/fxml">
-    <content>
+<HBox alignment="CENTER"
+      fx:controller="com.zenjava.samples.simpleflow.TransitionExampleActivity"
+      xmlns:fx="http://javafx.com/fxml">
+    <children>
         <VBox spacing="10">
             <styleClass><String fx:value="page"/><String fx:value="transition-example"/></styleClass>
 
@@ -24,5 +24,5 @@
                 </Label>
             </children>
         </VBox>
-    </content>
-</ScrollPane>
+    </children>
+</HBox>

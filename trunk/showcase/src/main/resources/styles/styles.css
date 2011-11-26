@@ -79,3 +79,26 @@
     -fx-padding: 10;
     -fx-wrap-text: true;
 }
+
+
+.custom-transition-example .label1 {
+
+}
+
+.custom-transition-example #label2,
+.custom-transition-example #label4,
+.custom-transition-example #label6,
+.custom-transition-example #label8
+{
+    -fx-padding: 10;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+
+.custom-transition-example #label9
+{
+    -fx-padding: 10;
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
+
