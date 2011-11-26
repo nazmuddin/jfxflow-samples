@@ -23,6 +23,9 @@ public class JfxFlowShowcaseApplicationFactory
         Browser browser = new Browser(navigationManager(), "JFX Flow Showcase");
         browser.getPlaceResolvers().add(new RegexPlaceResolver("home", homeActivity()));
         browser.getPlaceResolvers().add(new RegexPlaceResolver("navigation", navigationActivity()));
+        browser.getPlaceResolvers().add(new RegexPlaceResolver("navigation/browser", browserInfoActivity()));
+        browser.getPlaceResolvers().add(new RegexPlaceResolver("navigation/activity", actvityInfoActivity()));
+        browser.getPlaceResolvers().add(new RegexPlaceResolver("navigation/manager", navigationManagerInfoActivity()));
         browser.getPlaceResolvers().add(new RegexPlaceResolver("transitions", transitionsActivity()));
         browser.getPlaceResolvers().add(new RegexPlaceResolver("transitions/fade", fadeTransitionActivity()));
         browser.getPlaceResolvers().add(new RegexPlaceResolver("transitions/fly", flyTransitionActivity()));
@@ -43,6 +46,24 @@ public class JfxFlowShowcaseApplicationFactory
     public HomeActivity homeActivity()
     {
         return loader.load("/fxml/Home.fxml", resources());
+    }
+
+    @Bean
+    public BrowserInfoActivity browserInfoActivity()
+    {
+        return loader.load("/fxml/BrowserInfo.fxml", resources());
+    }
+
+    @Bean
+    public ActvityInfoActivity actvityInfoActivity()
+    {
+        return loader.load("/fxml/ActivityInfo.fxml", resources());
+    }
+
+    @Bean
+    public NavigationManagerInfoActivity navigationManagerInfoActivity()
+    {
+        return loader.load("/fxml/NavigationManagerInfo.fxml", resources());
     }
 
     @Bean
