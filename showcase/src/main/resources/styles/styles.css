@@ -17,6 +17,12 @@
     -fx-padding: 0 0 10 0;
 }
 
+.browser-content .subtitle {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10 0;
+}
+
 .browser-content .message {
     -fx-padding: 0 0 20 0;
     -fx-wrap-text: true;
@@ -29,7 +35,8 @@
 }
 
 
-.page {
+.page,
+.error-page {
     -fx-padding: 20;
 }
 
@@ -57,4 +64,10 @@
 .transitions .description {
     -fx-padding: 20 40 20 40;
     -fx-wrap-text: true;
+}
+
+.threading .action-area {
+    -fx-background-color: #ffc;
+    -fx-background-radius: 6;
+    -fx-padding: 10;
 }

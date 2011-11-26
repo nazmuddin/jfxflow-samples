@@ -23,6 +23,50 @@
                     <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
                 </Label>
 
+                <Label text="%threading.blocking.title">
+                    <styleClass><String fx:value="label"/><String fx:value="subtitle"/></styleClass>
+                </Label>
+                <Label text="%threading.blocking.message">
+                    <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
+                </Label>
+
+                <HBox spacing="10">
+                    <styleClass><String fx:value="action-area"/></styleClass>
+                    <children>
+                        <Button text="%threading.block" onAction="#startBackgroundTask" />
+                        <Label fx:id="statusLabel" text="%threading.block.normal"/>
+                    </children>
+                </HBox>
+
+                <Label text="%threading.blocking.custom.message">
+                    <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
+                </Label>
+
+                <HBox spacing="10">
+                    <styleClass><String fx:value="action-area"/></styleClass>
+                    <children>
+                        <Button fx:id="customTaskButton" text="%threading.block.custom" onAction="#startCustomBackgroundTask" />
+                        <Label fx:id="customStatusLabel" text="%threading.block.custom.normal"/>
+                        <ProgressIndicator fx:id="progressIndicator" visible="false"/>
+                    </children>
+                </HBox>
+
+
+                <Label text="%threading.errors.title">
+                    <styleClass><String fx:value="label"/><String fx:value="subtitle"/></styleClass>
+                </Label>
+                <Label text="%threading.errors.message">
+                    <styleClass><String fx:value="label"/><String fx:value="message"/></styleClass>
+                </Label>
+
+                <HBox spacing="10">
+                    <styleClass><String fx:value="action-area"/></styleClass>
+                    <children>
+                        <Button text="%threading.errors.start" onAction="#startErrorBackgroundTask" />
+                    </children>
+                </HBox>
+
+
             </children>
         </VBox>
     </content>
