@@ -1,3 +1,7 @@
+.browser {
+    -fx-skin: "com.zenjava.jfxflow.control.BrowserSkin";
+}
+
 .browser-content {
     -fx-padding: 0;
 }
@@ -45,8 +49,7 @@
 }
 
 
-.page,
-.error-page {
+.page {
     -fx-padding: 20;
 }
 
@@ -67,11 +70,6 @@
     -fx-border-radius: 6;
     -fx-padding: 10;
     -fx-wrap-text: true;
-}
-
-
-.custom-transition-example .label1 {
-
 }
 
 .custom-transition-example #label2,

@@ -30,17 +30,17 @@
                             <children>
 
                                 <!-- Browser -->
-                                <ImageView x="100" y="30">
+                                <ImageView x="100" y="30" onMouseClicked="#showBrowserInfo">
                                     <image><Image url="@../images/browser.png"/></image>
                                 </ImageView>
 
                                 <!-- Activity -->
-                                <ImageView x="400" y="50">
+                                <ImageView x="400" y="50" onMouseClicked="#showActivityInfo">
                                     <image><Image url="@../images/activity.png"/></image>
                                 </ImageView>
 
                                 <!-- Navigation Manager -->
-                                <ImageView x="250" y="380">
+                                <ImageView x="250" y="380" onMouseClicked="#showNavigationManagerInfo">
                                     <image><Image url="@../images/navigation-manager.png"/></image>
                                 </ImageView>
 
