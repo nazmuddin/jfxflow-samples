@@ -14,7 +14,7 @@
     <groupId>com.zenjava.jfxflow</groupId>
     <artifactId>showcase</artifactId>
     <name>JFX Flow Showcase</name>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <properties>
         <!-- Use system property to set this to the correct value -->
