@@ -7,7 +7,6 @@ import com.zenjava.jfxflow.navigation.Place;
 import com.zenjava.jfxflow.navigation.RegexPlaceResolver;
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class ActivityParamsApplication extends Application
@@ -27,17 +26,15 @@ public class ActivityParamsApplication extends Application
         ListPersonsActivity listPersonsActivity = loader.load("/ListPersons.fxml");
         listPersonsActivity.setNavigationManager(navigationManager);
         listPersonsActivity.setPersonService(personService);
-        browser.getPlaceResolvers().add(new RegexPlaceResolver("person/list", listPersonsActivity));
+        browser.getPlaceResolvers().add(new RegexPlaceResolver("list-persons", listPersonsActivity));
 
         ViewPersonActivity viewPersonActivity = loader.load("/ViewPerson.fxml");
         viewPersonActivity.setPersonService(personService);
-        browser.getPlaceResolvers().add(new RegexPlaceResolver("person/view", viewPersonActivity));
+        browser.getPlaceResolvers().add(new RegexPlaceResolver("view-person", viewPersonActivity));
 
-        navigationManager.goTo(new Place("person/list"));
+        navigationManager.goTo(new Place("list-persons"));
 
-        BorderPane root = new BorderPane();
-        root.setCenter(browser);
-        Scene scene = new Scene(root, 800, 600);
+        Scene scene = new Scene(browser, 800, 600);
         scene.getStylesheets().add("styles.css");
         stage.setScene(scene);
         stage.show();
