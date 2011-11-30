@@ -15,6 +15,7 @@
     <modules>
         <module>sample1-hello-world</module>
         <module>sample2-simple-flow</module>
+        <module>sample4-activity-params</module>
         <module>showcase</module>
     </modules>
 

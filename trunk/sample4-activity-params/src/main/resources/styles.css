@@ -1,0 +1,16 @@
+.title {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+.profile {
+    -fx-wrap-text: true;
+}
+
+.browser-content .scroll-pane {
+    -fx-pannable: true;
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}

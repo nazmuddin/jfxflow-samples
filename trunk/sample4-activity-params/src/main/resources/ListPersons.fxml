@@ -1,0 +1,21 @@
+<?fxml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="TOP_LEFT"
+      fx:controller="com.zenjava.samples.activityparams.ListPersonsActivity"
+      xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <HBox spacing="20">
+            <children>
+                <Label text="Famous Indigenous Australians">
+                    <styleClass><String fx:value="label"/><String fx:value="title"/></styleClass>
+                </Label>
+                <Button text="View Selected" onAction="#viewSelectedPerson"/>
+            </children>
+        </HBox>
+        <ListView fx:id="personsList" VBox.vgrow="ALWAYS"/>
+    </children>
+</VBox>
