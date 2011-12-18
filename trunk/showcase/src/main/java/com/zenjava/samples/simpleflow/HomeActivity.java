@@ -4,11 +4,12 @@ import com.zenjava.jfxflow.actvity.AbstractActivity;
 import com.zenjava.jfxflow.navigation.NavigationManager;
 import com.zenjava.jfxflow.navigation.Place;
 import javafx.event.ActionEvent;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.inject.Inject;
 
 public class HomeActivity extends AbstractActivity
 {
-    @Autowired private NavigationManager navigationManager;
+    @Inject private NavigationManager navigationManager;
 
     public void goToNavigation(ActionEvent event)
     {

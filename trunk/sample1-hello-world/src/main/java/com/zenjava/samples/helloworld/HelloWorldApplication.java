@@ -2,6 +2,7 @@ package com.zenjava.samples.helloworld;
 
 import com.zenjava.jfxflow.actvity.FxmlLoader;
 import javafx.application.Application;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -16,7 +17,7 @@ public class HelloWorldApplication extends Application
     {
         FxmlLoader loader = new FxmlLoader();
         HelloWorldActivity activity = loader.load("/HelloWorld.fxml");
-        Scene scene = new Scene(activity.getNode(), 200, 200);
+        Scene scene = new Scene((Parent) activity.getView().toNode(), 200, 200);
         stage.setScene(scene);
         stage.show();
     }

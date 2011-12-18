@@ -11,6 +11,6 @@ public class DialogsActivity extends AbstractActivity
     {
         Dialog dialog = new Dialog("Simple Dialog");
         dialog.setContent(new Label("You can put your own controls in it"));
-        dialog.show(getNode());
+        dialog.show(getView().toNode());
     }
 }

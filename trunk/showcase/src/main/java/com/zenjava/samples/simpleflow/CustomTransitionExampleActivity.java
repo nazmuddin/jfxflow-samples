@@ -29,7 +29,7 @@ public class CustomTransitionExampleActivity extends AbstractActivity
     @PostConstruct
     private void init()
     {
-        Node node = getNode();
+        Node node = getView().toNode();
         labels = new ArrayList<Label>();
         for (int i = 1; i <= 9; i++)
         {
@@ -153,6 +153,11 @@ public class CustomTransitionExampleActivity extends AbstractActivity
                 label.setScaleY(1);
             }
         };
+    }
+
+    public boolean isSequentialTransition()
+    {
+        return true;
     }
 
     public ViewTransition getEntryTransition()

@@ -1,8 +1,8 @@
 package com.zenjava.samples.simpleflow;
 
 import com.zenjava.jfxflow.actvity.AbstractActivity;
+import com.zenjava.jfxflow.error.ErrorHandler;
 import com.zenjava.jfxflow.worker.BackgroundTask;
-import com.zenjava.jfxflow.worker.ErrorHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
