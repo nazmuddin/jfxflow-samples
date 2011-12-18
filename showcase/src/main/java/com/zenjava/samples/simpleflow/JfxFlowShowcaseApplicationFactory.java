@@ -2,11 +2,11 @@ package com.zenjava.samples.simpleflow;
 
 import com.zenjava.jfxflow.actvity.FxmlLoader;
 import com.zenjava.jfxflow.control.Browser;
+import com.zenjava.jfxflow.error.DefaultErrorHandler;
+import com.zenjava.jfxflow.error.ErrorHandler;
 import com.zenjava.jfxflow.navigation.DefaultNavigationManager;
 import com.zenjava.jfxflow.navigation.NavigationManager;
 import com.zenjava.jfxflow.navigation.RegexPlaceResolver;
-import com.zenjava.jfxflow.worker.DefaultErrorHandler;
-import com.zenjava.jfxflow.worker.ErrorHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

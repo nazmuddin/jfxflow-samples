@@ -19,6 +19,7 @@ public class JfxFlowShowcaseApplication extends Application
         AnnotationConfigApplicationContext context
                 = new AnnotationConfigApplicationContext(JfxFlowShowcaseApplicationFactory.class);
         Browser browser = context.getBean(Browser.class);
+
         browser.getNavigationManager().goTo(new Place("home"));
         Scene scene = new Scene(browser, 800, 600);
         scene.getStylesheets().add("styles/styles.css");

@@ -30,14 +30,19 @@ public class TransitionExampleActivity extends AbstractActivity
         messageLabel.setText(resources.getString(String.format("transitionExample.message.%s", type.name())));
     }
 
+    public boolean isSequentialTransition()
+    {
+        return true;
+    }
+
     public ViewTransition getEntryTransition()
     {
         switch (type)
         {
             case fade:
-                return new FadeInTransition(getNode(), Duration.millis(800));
+                return new FadeInTransition(getView().toNode(), Duration.millis(800));
             case fly:
-                return FlyTransition.createFlyIn(getNode(), Duration.millis(800), VerticalPosition.top);
+                return FlyTransition.createFlyIn(getView().toNode(), Duration.millis(800), VerticalPosition.top);
             default:
                 throw new IllegalArgumentException(String.format("Unsupported type: %s", type));
         }
@@ -48,9 +53,9 @@ public class TransitionExampleActivity extends AbstractActivity
         switch (type)
         {
             case fade:
-                return new FadeOutTransition(getNode(), Duration.millis(800));
+                return new FadeOutTransition(getView().toNode(), Duration.millis(800));
             case fly:
-                return FlyTransition.createFlyOut(getNode(), Duration.millis(800),
+                return FlyTransition.createFlyOut(getView().toNode(), Duration.millis(800),
                         HorizontalPosition.right, VerticalPosition.bottom);
             default:
                 throw new IllegalArgumentException(String.format("Unsupported type: %s", type));
