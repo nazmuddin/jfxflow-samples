@@ -1,0 +1,1 @@
+Contains a set of samples, of varying complexity, that showcase the features and usage of the JFX Flow application framework.
